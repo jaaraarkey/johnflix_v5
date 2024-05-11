@@ -34,10 +34,10 @@ const DiscoverMovies = () => {
             className='movieTitle border-2 p-2 w-64 h-96 ' 
             key={index}> 
             {movie.title}
-                {/* <Link to={`/movie/privet`}> */}
+                <Link to={`/movie/privet`}>
                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}
                     className='w-64 h-96 object-cover min-w-64' />
-                {/* </Link> */}
+                </Link>
              </div>
         }
         ): <div>Contact your API provider</div>}
